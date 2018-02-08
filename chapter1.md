@@ -1,25 +1,37 @@
 ---
-title: Template Chapter 1
-description: This is a template chapter.
+title       : R kui kalkulaator
+description : Esimene teema - kalkulaator, omistamine
 ---
 
-## Ex 1.1
+## Sissejuhatus
 
 ```yaml
 type: NormalExercise
 lang: r
 xp: 100
 skills: 1
-key: ab68d482e6
+key: 7483cd3c09
 ```
 
-Do some data science.
+Kirjuta kõigi ülesannete lahendused paremal aknapoolel olevasse *script.R* lehele, vastava ülesande sõnastuse alla. Siinses näites on esimese ülesande lahendus juba kirja pandud.
+
+Ühe vastuse väljaarvutamiseks või testimiseks pane *script.R* lehel hiirekursor vastava rea peale ja vajuta klahvikombinatsiooni `Ctrl+Enter`, 
+sellega saadetakse vastav rida allpool olevale R-i konsoolile täitmiseks. Konsooli käsurida võid ka kasutada: kirjuta käsk ning vajuta täitmiseks `Enter`-klahvi. Proovi siin ülesandes need võimalused läbi.
+
+Lahenduse vihjete saamiseks vajuta nuppu `Take Hint`, aga sellega kaotad võimalikke punkte! Kui oled lahti teinud vihjed, siis võid edasi avada ka kogu lahenduse koodi, kuid nii toimides lähevad ülesande punktid nulli.
+
+Oma vastuse esitamiseks vajuta `Submit Answer`-nuppu, siis saadetakse ülesanded kontrollimiseks. Vajuta seda nuppu siis kui oled kirja pannud kõik selle lehekülje ülesannete vastused.
 
 `@instructions`
+**Prooviülesanne (0 punkti):**
+
+1. Liida arvud 3 ja 4.
+2. Omista väärtus 7 muutujale `x`.
 
 
 `@hint`
-
+- Liitmiseks kasuta märki `+` või funktsiooni `sum`
+- Omistamiseks kasuta kombinatsiooni `<-`
 
 `@pre_exercise_code`
 
@@ -30,17 +42,35 @@ Do some data science.
 `@sample_code`
 
 ```{r}
+# Liida
+3 + 4
+
+
+# Omista
 
 ```
 
 `@solution`
 
 ```{r}
+# Liida
+3 + 4
 
+# Omista
+x <- 7
 ```
 
 `@sct`
 
 ```{r}
+# esimene
+test_output_contains("3 + 4", times = 1, incorrect_msg = "Oled esimeses ülesandes õige vastuse valeks parandanud. Alusta uuesti!")
+test_student_typed("3",  not_typed_msg = "Kontrolli, kas esimese ülesande tehe on kujul `3 + 4`!")
+test_student_typed("4",  not_typed_msg = "Kontrolli, kas esimese ülesande tehe on kujul `3 + 4`!")
+ 
+
+# teine
+test_object("x",  undefined_msg = "Vali muutuja nimeks `x`.",  incorrect_msg = "Omistasid muutujale  `x` vale väärtuse. Proovi uuesti!")
+success_msg("Tubli! Asu nüüd päris ülesandeid lahendama!")
 
 ```
