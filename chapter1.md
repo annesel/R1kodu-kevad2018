@@ -25,8 +25,8 @@ Oma vastuse esitamiseks vajuta `Submit Answer`-nuppu, siis saadetakse ülesanded
 `@instructions`
 **Prooviülesanne (0 punkti):**
 
-1. Liida arvud 3 ja 4.
-1. Omista väärtus 7 muutujale `x`.
+Liida arvud 3 ja 4.
+Omista väärtus 7 muutujale `x`.
 
 
 `@hint`
