@@ -9,7 +9,7 @@ description : Kolmas teema - vektorid
     * `1:5                 # arvujada 1, 2, 3, 4, 5`
     * `rep(1:3, times = 2) # vektorit elementidega 1, 2, 3 korrata 2 korda`
     * `seq(3, 9, by = 2)   # arvujada sammuga 2: 3, 5, 7, 9`
-- Kui teha vektorobjektidega arvtusi, siis tehted tehakse läbi iga vektori elemendiga.
+- Kui teha vektor-objektidega arvtusi, siis tehted tehakse läbi iga vektori elemendiga.
 
 *** =instructions
 - Tee läbi näited 1 kuni 3.
@@ -124,7 +124,7 @@ Töölaual on temperatuurde vektor nimega `temp2`
 
 *** =hint
 - Teises ülesandes peab muutujale `vastus2` omistama mediaani väärtuse.
-- Standardhälve on mittenegatiivne suurus.
+- Standardhälve on alati mittenegatiivne suurus.
 
 *** =pre_exercise_code
 ```{r}
@@ -168,7 +168,7 @@ exp(temp2)
 vastus1 <- "jah"
 
 
-# Ülesanne 2: Rakenda funktsiooni summary() ja pane kirja vastus (asenda alakriips sobiva koodiga)
+# Ülesanne 2: Rakenda funktsiooni summary() ja pane kirja vastus (asenda alakriips sobiva koodi/arvuga)
 summary(temp2)
 vastus2 <- -16.1
 

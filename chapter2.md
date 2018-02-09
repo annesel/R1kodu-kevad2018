@@ -232,7 +232,7 @@ Tekstiväärtustega arvutustehteid teha ei saa, küll aga saab tekste omavahel �
 *** =instructions
 - Proovi läbi näited 1 ja 2.
 - Täida ka näite 3 käsud ja vaata, millise veateate annab R. Kas saad aru milles on viga?
-- **Ülesanne:** paranda näite 3 koodi nii, et liitmisel tuleks vastuseks arv ning punast veateadet ei ilmuks.
+- **Ülesanne:** paranda näite 3 koodis muutuja `poisse`  väärtust nii, et liitmisel tuleks vastuseks arv 6 ning punast veateadet ei ilmuks.
 
 
 *** =hint

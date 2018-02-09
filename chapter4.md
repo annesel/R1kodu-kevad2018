@@ -159,7 +159,7 @@ Loogilisi tehteid on kolm
 
 
 *** =hint
-- Sobiv tehe on korrutamine (`&`).
+- Kolmandas ülesandes on sobiv tehe korrutamine (`&`).
 
 
 *** =pre_exercise_code
