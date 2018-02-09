@@ -71,7 +71,7 @@ test_student_typed("4",  not_typed_msg = "Kontrolli, kas esimese ülesande tehe 
 
 # teine
 test_object("x",  undefined_msg = "Vali muutuja nimeks `x`.",  incorrect_msg = "Omistasid muutujale  `x` vale väärtuse. Proovi uuesti!")
-success_msg("Tubli! Asu nüüd päris ülesandeid lahendama!")
+success_msg("Tubli! Katsetamise ülesanne on tehtud, asu nüüd päris ülesandeid lahendama!")
 
 ```
 
@@ -190,7 +190,7 @@ test_output_contains(expr = "25 - 1/4  + 5/9 ",
 # Ül 2
 test_output_contains(expr = "(sqrt(3) + 4) / 5",
                     times = 1,
-                    incorrect_msg = "Midagi on teises ülesandes valesti! Kontrolli tehete järjekorda. Ruutjuure leidmiseks kasuta: `sqrt(3)`.")
+                    incorrect_msg = "Midagi on teises ülesandes valesti! Kontrolli tehete järjekorda ja tehtemärke. Ruutjuure leidmiseks kasuta: `sqrt(3)`.")
 # ÜL 3
 test_output_contains(expr = "(245 - 3^6)^2 ",
                      times = 1,
