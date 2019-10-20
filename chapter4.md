@@ -1,8 +1,18 @@
 ---
-title       : Väärtuste tüübid
-description : Neljas teema - väärtuste tüübid, tõeväärtused
---- type:NormalExercise lang:r xp:100 skills:1 key:5e89d5ccd7
+title: 'Väärtuste tüübid'
+description: 'Neljas teema - väärtuste tüübid, tõeväärtused'
+---
+
 ## Väärtuste tüübid. Puuduvad väärtused
+
+```yaml
+type: NormalExercise
+key: 5e89d5ccd7
+lang: r
+xp: 100
+skills: 1
+```
+
 R-is on põhilised väärtuste tüübid, mida kasutame:
 
 * `int` / `integer` -- täisarvud
@@ -22,26 +32,22 @@ Tüübi kontroll, teisendamine
 * Objekti väärtuse tüübi kontrolliks saab kasutada funktsioone kujul `is.<tüüp>`, näiteks `is.character(muutuja)`, `is.nan(muutuja)`.
 * Tüübi teisenduseks aga funktsioone `as.<tüüp>`, näiteks `as.integer(muutuja)`.
 
-
-
-*** =instructions
-
+`@instructions`
 - Vaata üle millised vektorid etteantud koodi alguses moodustatakse.
 - **Ülesanne 1**: Kontrolli, kas vektor `muutuja1` on tõeväärtusvektor. Täienda etteantud koodi, pannes kirja kontrolliks sobiva funktsiooni nime.
 - **Ülesanne 2**: Rakenda funktsiooni `is.nan()` teisele moodustatud vektroile `muutuja2`. Pane tähele, et funktsiooni tulemus on ka vektor.
 - **Ülesanne 3**: Asenda vektoris `muutuja3` esimene element tühikuga, kasutades funktsiooni `is.na()` abi. Prindi muudetud vektor ekraanile.
 
-*** =hint
+`@hint`
 - Esimeses ülesandes kasuta funktsiooni `is.logical()`.
 - Selleks, et esimene element määrata tühikuks, peab elemendi `is.na(muutuja3)[1]` väärtuseks omistama `TRUE`.
 
-
-*** =pre_exercise_code
+`@pre_exercise_code`
 ```{r}
 
 ```
 
-*** =sample_code
+`@sample_code`
 ```{r}
 # Moodustame mõned vektorid ja vaatame tulemust.
 muutuja1 <- c("TRUE", "true",  "Tru", "FALSE", "F", "false", NA)
@@ -64,7 +70,7 @@ muutuja3
 
 ```
 
-*** =solution
+`@solution`
 ```{r}
 # Moodustame mõned vektorid ja vaatame tulemust.
 muutuja1 <- c("TRUE", "true",  "Tru", "FALSE", "F", "false", NA)
@@ -85,7 +91,7 @@ is.na(muutuja3)[1] <- TRUE
 muutuja3
 ```
 
-*** =sct
+`@sct`
 ```{r}
 test_predefined_objects("muutuja1",undefined_msg = "Oled vektori `muutuja1` kustutanud! Alusta uuesti.", incorrect_msg = "Muutuja `muutuja1` väärtused on muudetud! Alusta uuesti")
 test_predefined_objects("muutuja2",undefined_msg = "Oled vektori `muutuja2` kustutanud! Alusta uuesti.", incorrect_msg = "Muutuja `muutuja2` väärtused on muudetud! Alusta uuesti")
@@ -124,10 +130,17 @@ test_output_contains("muutuja3", incorrect_msg = "Vektor `muutuja3` pole välja 
 success_msg("Tubli töö!")
 ```
 
+---
 
-
---- type:NormalExercise lang:r xp:100 skills:1 key:efa4b167fa
 ## Veel tõeväärtustest 1
+
+```yaml
+type: NormalExercise
+key: efa4b167fa
+lang: r
+xp: 100
+skills: 1
+```
 
 Tõeväärtuseid on kaks: `TRUE` ja `FALSE`. R saab aru ka lühenditest `T` ja `F`.
 
@@ -146,28 +159,23 @@ Loogilisi tehteid on kolm
 
 * korrutamine (`&`)
 * liitmine (`|`) 
-* eitus (`!`). 
+* eitus (`!`).
 
-
-
-*** =instructions
+`@instructions`
 - Tee läbi näited 1 kuni 3.
 - **Ülesanne 1.**  Väärtusta tõeväärtusvektor, mille elementide väärtus on `TRUE`, kui `x` väärtused on suuremad kui 30 (`FALSE` vastasel juhul). Omista tulemus muutujale `x4` ja prindi see ekraanile.
 - **Ülesanne 2.** Moodusta tõeväärtusvektor, mille elementide väärtus on `TRUE`, kui  `x` väärtused on  väiksemad kui 40  (`FALSE` vastasel juhul). Omista tulemus muutujale `x5` ja prindi see ekraanile.
 - **Ülesanne 3.** Moodusta tõeväärtusvektor `x6`, mille elementide väärtus on `TRUE`, kui  `x` väärtused on vahemikus 30 kuni 40  (`FALSE` vastasel juhul), kasutades vektoreid  `x4` ja  `x5` ning sobivat loogilist tehet (`|`, `&`, `!`). Prindi `x6` ekraanile.
 
-
-
-*** =hint
+`@hint`
 - Kolmandas ülesandes on sobiv tehe korrutamine (`&`).
 
-
-*** =pre_exercise_code
+`@pre_exercise_code`
 ```{r}
 
 ```
 
-*** =sample_code
+`@sample_code`
 ```{r}
 # antud on vektor x
 x <- c(34, 23, 45, 67, 10, 21, 37)
@@ -205,7 +213,7 @@ x6
 
 ```
 
-*** =solution
+`@solution`
 ```{r}
 # antud on vektor x
 x <- c(34, 23, 45, 67, 10, 21, 37)
@@ -238,7 +246,7 @@ x6 <- x4 & x5
 x6
 ```
 
-*** =sct
+`@sct`
 ```{r}
 test_predefined_objects("x", undefined_msg = "Oled vektori `x` kustutanud! Alusta uuesti.", incorrect_msg = "Muutuja `x` väärtused on muudetud! Alusta uuesti")
 
@@ -261,10 +269,17 @@ success_msg("Tubli! Järgmine ülesanne on viimane.")
 
 ```
 
+---
 
-
---- type:NormalExercise lang:r xp:100 skills:1 key:720b8a9769
 ## Veel tõeväärtustest 2
+
+```yaml
+type: NormalExercise
+key: 720b8a9769
+lang: r
+xp: 100
+skills: 1
+```
 
 Tõeväärtuseid on kaks: `TRUE` ja `FALSE`. R saab aru ka lühenditest `T` ja `F`.
 
@@ -283,29 +298,27 @@ Loogilisi tehteid on kolm
 
 * korrutamine (`&`)
 * liitmine (`|`) 
-* eitus (`!`). 
+* eitus (`!`).
 
-
-
-*** =instructions
+`@instructions`
 - Tee läbi näide.
 - **Ülesanne**  Leia tõevektor, mis näitaks millised vektori `y` väärtused vastavad sõnele "tere" või "tsau".  
 Omista vektor muutujale `viimane`, prindi see ekraanile. Vektori `y` väärtustest saad ülevaate sagedustabeli `table(y)` abil.
 
-*** =hint
+`@hint`
 - Vastuse kirjapanekuks on siin mitu võimalust. 
 
     - Tere **või** tsau
     - (**Ei** ole hei)  **ja** (**ei** ole hommikust)
     -  **Ei** ole (hei **või** hommikust)
 
-*** =pre_exercise_code
+`@pre_exercise_code`
 ```{r}
 kordused <- c(45, 20, 68, 9)
 y <- sample(rep(c("tere", "hei", "tsau", "hommikust"), times = kordused), size = sum(kordused))
 ```
 
-*** =sample_code
+`@sample_code`
 ```{r}
 # Näide: vaatame tähestiku algust, moodustame kolme moodi tõevektori, mille väärtus on TRUE, kui täht on a või b ning on FALSE vastasel korral
 abc <- letters[1:3]
@@ -324,7 +337,7 @@ table(y)
  
 ```
 
-*** =solution
+`@solution`
 ```{r}
 # Näide: vaatame tähestiku algust, moodustame kolme moodi tõevektori, mille väärtus on TRUE, kui täht on 'a' või 'b' ning on FALSE vastasel korral
 abc <- letters[1:3]
@@ -344,7 +357,7 @@ viimane
 
 ```
 
-*** =sct
+`@sct`
 ```{r}
 test_predefined_objects("y",undefined_msg = "Oled vektori `y` kustutanud! Alusta uuesti.", incorrect_msg = "Muutuja `y` väärtused on muudetud! Alusta uuesti")
 
@@ -355,8 +368,3 @@ test_output_contains("viimane", incorrect_msg = "Vektor `viimane` pole välja pr
 
 success_msg("Tubli! Viimane ülesanne on tehtud. Premeeri end millegi heaga.")
 ```
-
-
-
-
-

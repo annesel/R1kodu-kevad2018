@@ -1,16 +1,16 @@
 ---
-title       : R kui kalkulaator
-description : Esimene teema - kalkulaator, omistamine
+title: 'R kui kalkulaator'
+description: 'Esimene teema - kalkulaator, omistamine'
 ---
 
 ## Sissejuhatus
 
 ```yaml
 type: NormalExercise
+key: 7483cd3c09
 lang: r
 xp: 100
 skills: 1
-key: 7483cd3c09
 ```
 
 Kirjuta kõigi ülesannete lahendused paremal aknapoolel olevasse *SCRIPT.R* lehele, vastava ülesande sõnastuse alla. Siinses näites on esimese ülesande lahendus juba kirja pandud.
@@ -28,19 +28,16 @@ Oma vastuse esitamiseks vajuta `Submit Answer`-nuppu, siis saadetakse ülesanded
 - Liida arvud 3 ja 4.
 - Omista väärtus 7 muutujale `x`.
 
-
 `@hint`
 - Liitmiseks kasuta märki `+` või funktsiooni `sum`
 - Omistamiseks kasuta kombinatsiooni `<-`
 
 `@pre_exercise_code`
-
 ```{r}
 
 ```
 
 `@sample_code`
-
 ```{r}
 # Liida
 3 + 4
@@ -51,7 +48,6 @@ Oma vastuse esitamiseks vajuta `Submit Answer`-nuppu, siis saadetakse ülesanded
 ```
 
 `@solution`
-
 ```{r}
 # Liida
 3 + 4
@@ -61,7 +57,6 @@ x <- 7
 ```
 
 `@sct`
-
 ```{r}
 # esimene
 test_output_contains("3 + 4", times = 1, incorrect_msg = "Oled esimeses ülesandes õige vastuse valeks parandanud. Alusta uuesti!")
@@ -75,13 +70,17 @@ success_msg("Tubli! Katsetamise ülesanne on tehtud, asu nüüd päris ülesande
 
 ```
 
+---
 
-
-
-<!--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
-
---- type:NormalExercise lang:r xp:100 skills:1 key:65ef1386ac
 ## Arvutamine
+
+```yaml
+type: NormalExercise
+key: 65ef1386ac
+lang: r
+xp: 100
+skills: 1
+```
 
 Esmalt mõned arvutusülesanded. 
 
@@ -103,8 +102,7 @@ ja paar funktsiooni:
 
 **NB!** R teeb vahet suurtel ja väikestel tähtedel. Seega näiteks `sin()` ja `Sin()` viitavad erinevatele funktsioonidele.
 
-
-*** =instructions
+`@instructions`
 **Leia vastused järgmistele tehetele:**
 
 1. $25 - 1:4  + 5:9$
@@ -115,18 +113,17 @@ ja paar funktsiooni:
 
 1. $ \frac{\ln{3} + 4}{55}$
 
-
-*** =hint
+`@hint`
 - Pööra tähelepanu tehete järjekorrale.
 - Ruutjuure leidmiseks kasuta funktsiooni `sqrt()` ja naturaallogaritmi leidmiseks funktsiooni `log()`.
 
-*** =pre_exercise_code
+`@pre_exercise_code`
 ```{r}
 Sin <- function(x) print("Vahele jäid! Siinuse leidmiseks kasuta ikka funktsiooni sin()")
 
 ```
 
-*** =sample_code
+`@sample_code`
 ```{r}
 # Ülesanne 1
 
@@ -142,7 +139,7 @@ Sin <- function(x) print("Vahele jäid! Siinuse leidmiseks kasuta ikka funktsioo
 
 ```
 
-*** =solution
+`@solution`
 ```{r}
 # Ülesanne 1
 25 - 1/4  + 5/9
@@ -159,7 +156,7 @@ Sin <- function(x) print("Vahele jäid! Siinuse leidmiseks kasuta ikka funktsioo
 
 ```
 
-*** =sct
+`@sct`
 ```{r}
 # Ül 2
 #test_function_result(name = "sqrt",
@@ -205,8 +202,3 @@ success_msg("Hästi! Mine edasi järgmise ülesande juurde.")
 
 
 ```
-
-<!--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
-
-
-

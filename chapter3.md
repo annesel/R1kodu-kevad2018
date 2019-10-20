@@ -1,8 +1,17 @@
 ---
-title       : Vektorite loomine, elementide valik
-description : Kolmas teema - vektorid
---- type:NormalExercise lang:r xp:100 skills:1 key:ec64c03bcd
+title: 'Vektorite loomine, elementide valik'
+description: 'Kolmas teema - vektorid'
+---
+
 ## Vektori moodustamine, tehted vektoriga
+
+```yaml
+type: NormalExercise
+key: ec64c03bcd
+lang: r
+xp: 100
+skills: 1
+```
 
 - Üksikuid arve või tekstiväärtusi saab kokku panna vektoriks funktsiooni `c()` (*combine*) abil. 
 - Veel võimalusi vektorite moodustamiseks:
@@ -11,17 +20,16 @@ description : Kolmas teema - vektorid
     * `seq(3, 9, by = 2)   # arvujada sammuga 2: 3, 5, 7, 9`
 - Kui teha vektor-objektidega arvtusi, siis tehted tehakse läbi iga vektori elemendiga.
 
-*** =instructions
+`@instructions`
 - Tee läbi näited 1 kuni 3.
 - **Ülesanne 1.** Teisenda temperatuurid celsiuse skaalalt fahrenheiti skaalale ($^\circ\hspace{-0.1em} F = ^\circ\hspace{-0.1em} C \times \frac{9}{5} + 32$). Omista tulemus muutujale `Fahrenheit` ja prindi see ekraanile.
 - **Ülesanne 2.** Vektoris `lisa` on veel kaks õhutemperatuuri($^\circ\hspace{-0.1em} C$). Prindi see vektor ekraanile.
 - **Ülesanne 3.** Kasutades funkstiooni `c()` moodusta vektor nimega `temp2`, mille esimesed 9 elementi  on temperatuurid vektorist `temp` ja järgmised 2 temperatuurid vektorist `lisa`. Väljasta tulemus ekraanile.
 
-
-*** =hint
+`@hint`
 - Funktsiooni `c()` saab lisaks üksikutest väärtustest vektori tegemisele kasutada ka olemasolevate vektorite kombineerimiseks: `c(vektor1, vektor2)`.
 
-*** =pre_exercise_code
+`@pre_exercise_code`
 ```{r}
 lisa <- c(-24.9, -16.1)
 names(lisa) <- c("Mustvee", "Keila")
@@ -29,7 +37,7 @@ names(lisa) <- c("Mustvee", "Keila")
 
 ```
 
-*** =sample_code
+`@sample_code`
 ```{r}
 # Näide 1: Moodustame 2 vektorit, millest ühes on kirjas temperatuurid (20.01.2010 kell 10), teises ilmajaamad, kus need on mõõdetud :
 temp <- c(-6.2, -12.9, -13.0, -15.4, -16.1, -16.9, -17.0, -19.6, -19.9)
@@ -55,7 +63,7 @@ temp2
 
 ```
 
-*** =solution
+`@solution`
 ```{r}
 # Näide 1: Moodustame 2 vektorit, millest ühes on kirjas temperatuurid (20.01.2010 kell 10), teises jaamad, kus need on mõõdetud :
 temp <- c(-6.2, -12.9, -13.0, -15.4, -16.1, -16.9, -17.0, -19.6, -19.9)
@@ -80,7 +88,7 @@ temp2 <- c(temp, lisa)
 temp2
 ```
 
-*** =sct
+`@sct`
 ```{r}
 test_object("Fahrenheit", undefined_msg = "Muutuja `Fahrenheit` on kaduma läinud!", incorrect_msg = "Kontrolli, kas omistad muutujale `Fahrenheit` õige tehte.")
 test_output_contains("Fahrenheit", times = 1, incorrect_msg = "Prindi vektor `Fahrenheit` ekraanile!")
@@ -97,43 +105,40 @@ success_msg("Super! Liigu järgmise ülesande juurde.")
 
 ```
 
+---
 
-
-
-
-
-
-
-
-
---- type:NormalExercise lang:r xp:100 skills:1 key:de5673cfb7
 ## Funktsioonide rakendamine vektoritele
+
+```yaml
+type: NormalExercise
+key: de5673cfb7
+lang: r
+xp: 100
+skills: 1
+```
 
 Kui anname funktsiooni argumendiks vektori, siis olenevalt funktsioonist võib tulemuseks olla teisendatud väärtustega vektor või mingi kokkuvõtlik summarne näitaja/näitajad.
 
 Töölaual on temperatuurde vektor nimega `temp2`
 
-*** =instructions
+`@instructions`
 - Vaata millised väärtused  esinevad vektoris `temp2` st prindi väärtused ekraanile
 - **Ülesanne 1.** Rakenda tempratuuride vektorile funktsiooni `exp()`. Kas tulemuses on sama palju elemente kui algses vektoris? Omista oma vastus (tekst "jah" või "ei") muutujale `vastus1`.
 - **Ülesanne 2.** Rakenda tempratuuride vektorile funktsiooni `summary()`. Millisest temperatuurist on pooled temperatuuriväärtused madalamad ja pooled kõrgemad? Omista see väärtus muutujale`vastus2`. 
-- **Ülesanne 3.** Rakenda tempratuuride vektorile funktsiooni `sd()`. Kas standardhälbe väärtus tuleks negatiivne, kui temperatuuride vektoris esineks nii positiivseid kui negatiiivseid väärtuseid? Omista oma vastus (tekst "jah" või "ei") muutujale `vastus3`. 
+- **Ülesanne 3.** Rakenda tempratuuride vektorile funktsiooni `sd()`. Kas standardhälbe väärtus tuleks negatiivne, kui temperatuuride vektoris esineks nii positiivseid kui negatiiivseid väärtuseid? Omista oma vastus (tekst "jah" või "ei") muutujale `vastus3`.
 
-
-
-
-*** =hint
+`@hint`
 - Teises ülesandes peab muutujale `vastus2` omistama mediaani väärtuse.
 - Standardhälve on alati mittenegatiivne suurus.
 
-*** =pre_exercise_code
+`@pre_exercise_code`
 ```{r}
 temp2 <- c(-6.2, -12.9, -13.0, -15.4, -16.1, -16.9, -17.0, -19.6, -19.9, -24.9, -16.1)
 jaam <- c("Ruhnu", "Kihnu", "Pakri", "Tallinn", "Pärnu", "Kunda", "Kuusiku", "Võru", "Jõgeva", "Mustvee", "Keila")            
 names(temp2) <- jaam
 ```
 
-*** =sample_code
+`@sample_code`
 ```{r}
 # prindi vektor
 temp2
@@ -158,7 +163,7 @@ vastus3 <- __________
 
 ```
 
-*** =solution
+`@solution`
 ```{r}
 # prindi vektor
 temp2
@@ -181,7 +186,7 @@ vastus3 <- "ei"
 
 ```
 
-*** =sct
+`@sct`
 ```{r}
 # 1
 test_function("exp", args = c("x"), index = 1,
@@ -223,30 +228,37 @@ success_msg("Väga tubli!")
 
 
 ```
---- type:NormalExercise lang:r xp:100 skills:1 key:2c0fd8e002
+
+---
+
 ## Vektori alamosade selekteerimine
 
-Väga sageli on tarvis vektorist kätte saada meile hetkel vajalikku alamosa. Vaatame paari võimalust vektorist elementide välja noppimiseks. 
+```yaml
+type: NormalExercise
+key: 2c0fd8e002
+lang: r
+xp: 100
+skills: 1
+```
 
+Väga sageli on tarvis vektorist kätte saada meile hetkel vajalikku alamosa. Vaatame paari võimalust vektorist elementide välja noppimiseks.
 
-*** =instructions
- - Tee  näited 1 kuni 3  ükshaaval läbi ja uuri tulemust.
+`@instructions`
+- Tee  näited 1 kuni 3  ükshaaval läbi ja uuri tulemust.
  - **Ülesanne 1:** Vali temperatuurivektorist elemendid, mis on paarisarvulistel kohtadel (paarisarvulise vektori moodustamiseks kasuta funktsiooni `seq()`). Omista saadud alamvektor muutujale `vastus1`. Prindi tulemus ekraanile.
  - **Ülesanne 2:** Vali välja jaamad, kus temperatuur on olnud -17 või alla selle. Kasuta valiku tegemisel tõeväärtusvektorit ja kandilisi sulge `[]`. Omista saadud alamvektor muutujale `vastus2`.  Prindi tulemus ekraanile.
 
-
-
-*** =hint
+`@hint`
 - Funktsioonis `seq()` peab määrama argumendid `from`, `to` ja `by`.
 - Märgi $\leq$ moodustamiseks kombineeri `<` ja `=` märke:  `<=`.
 
-*** =pre_exercise_code
+`@pre_exercise_code`
 ```{r}
 temp <- c(-6.2, -12.9, -13.0, -15.4, -16.1, -16.9, -17.0, -19.6, -19.9)
 jaam <- c("Ruhnu", "Kihnu", "Pakri", "Tallinn", "Pärnu", "Kunda", "Kuusiku", "Võru", "Jõgeva")          
 ```
 
-*** =sample_code
+`@sample_code`
 ```{r}
 # Objektid nimedega temp ja jaam on töölaual juba olemas
 temp; jaam
@@ -275,7 +287,7 @@ vastus2 <- ________
 vastus2
 ```
 
-*** =solution
+`@solution`
 ```{r}
 # Objektid nimedega temp ja jaam on töölaual juba olemas
 temp; jaam
@@ -306,7 +318,7 @@ vastus2
 
 ```
 
-*** =sct
+`@sct`
 ```{r}
 test_object("vastus1", undefined_msg = "Muutujat `vastus1` pole!", incorrect_msg = "Kontrolli, kas valid elemendid vektorist `temp` ja annad ette korrektsed indeksid?")
 test_function("seq", args = c("from", "to", "by"), index = 1,
@@ -326,13 +338,3 @@ test_output_contains("vastus2", incorrect_msg = "Vektor `vastus2` pole välja pr
 
 success_msg("Tubli töö! Jätka samas vaimus!")
 ```
-
-
-
-
-
-
-
-
-
-

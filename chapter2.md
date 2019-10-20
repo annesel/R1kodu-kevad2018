@@ -1,8 +1,17 @@
 ---
-title       : Muutujate kasutamine
-description : Teine teema - muutujad
---- type:NormalExercise lang:r xp:100 skills:1 key:5baa0d5670
-## Muutujad 
+title: 'Muutujate kasutamine'
+description: 'Teine teema - muutujad'
+---
+
+## Muutujad
+
+```yaml
+type: NormalExercise
+key: 5baa0d5670
+lang: r
+xp: 100
+skills: 1
+```
 
 R-is võivad muutujate nimed sisaldada suuri ja väikesi tähti, numbreid, punkti ja alakriipsu. Erandiks on see, et nimi ei või alata numbri või alakriipsuga. 
 
@@ -11,27 +20,21 @@ Muutujale `x` saab  väärtuse 3 omistada järgmiselt: `x <- 3`.
 
 **Tähtis!** R teeb vahet suurte ja väikeste tähtede vahel. Seega on `x` ja `X` kaks erinevat objekti. Samuti annab `SQRT(2)` veateate, sest ruutjuure leidmise funktsioon on `sqrt()` (väikesed tähed!).
 
-
-
-
-*** =instructions
-
+`@instructions`
 - Proovi läbi näited 1 ja 2.
 - **Ülesanne:** Loo muutuja `w` väärtusega 3 ning  omista muutujale `z` summa, mille liidetavad on `w` ja 5. Väljasta `z` väärtus ekraanile.
 
-
-*** =hint
-
+`@hint`
 * Omistamiseks kasuta märki `<-`.
 * Kasuta tehet `w + 5`.
 * Väärtuse ekraanile väljastamiseks kirjuta lihtsalt selle muutuja nimi `z`.
 
-*** =pre_exercise_code
+`@pre_exercise_code`
 ```{r}
 
 ```
 
-*** =sample_code
+`@sample_code`
 ```{r}
 # Näide 1. Omistame muutjale y väärtuse 2 ja väljastame väärtuse
 y <- 2
@@ -45,7 +48,7 @@ y + 5
 
 ```
 
-*** =solution
+`@solution`
 ```{r}
 # Näide 1. Omistame muutjale y väärtuse 2 ja väljastame väärtuse
 y <- 2
@@ -61,7 +64,7 @@ z
 
 ```
 
-*** =sct
+`@sct`
 ```{r}
 test_object(c("w", "z"), undefined_msg = "Kontrolli muutujate nimesid, kas Sul on defineeritud muutujad `w` ja `z`?", incorrect_msg = "Kontrolli mõlema muutuja väärtust!")
 test_student_typed("z <- w + 5", not_typed_msg = "Kas kirjutasid `z <- w + 5`?")
@@ -69,16 +72,21 @@ test_output_contains("z", incorrect_msg = "Kas kirjutasid viimasele reale `z`? "
 success_msg("Hästi tehtud!")
 ```
 
+---
 
-
-
---- type:NormalExercise lang:r xp:100 skills:1 key:83e0b3e09b
 ## Muutujate kasutamine tehetes
+
+```yaml
+type: NormalExercise
+key: 83e0b3e09b
+lang: r
+xp: 100
+skills: 1
+```
 
 Kui muutuja on väärtustatud, siis edasistes arvutustes võiks muutujat kasutada selle arvu, avaldise, vektori vms asemel, mida ta tähistab.
 
-
-*** =instructions
+`@instructions`
 **Lahenda ülesanded:**
 
 1. Omista arv $25 \pi$ muutujale `z`. Arv $\pi$ on R-is muutuja `pi` nime all.
@@ -89,21 +97,16 @@ Kui muutuja on väärtustatud, siis edasistes arvutustes võiks muutujat kasutad
 
 1. Kasutades muutujat `z`, arvuta tehte $25 \pi + \frac{1}{25 \pi} - 2^{\frac{25\pi}{19}}$ vastus.
 
-
-
-
-
-*** =hint
+`@hint`
 - Logaritmfunktsiooni abilehe saad avada kui kirjutad konsoolile `?log` ja vajutad enter-klahvi.
-- Kui sul tekkisid probleemid astendamismärgi `^` leidmisega, siis kasuta selle asemel `**`. 
+- Kui sul tekkisid probleemid astendamismärgi `^` leidmisega, siis kasuta selle asemel `**`.
 
-
-*** =pre_exercise_code
+`@pre_exercise_code`
 ```{r}
 
 ```
 
-*** =sample_code
+`@sample_code`
 ```{r}
 # Omista muutujale z nõutud väärtus
 
@@ -121,7 +124,7 @@ Kui muutuja on väärtustatud, siis edasistes arvutustes võiks muutujat kasutad
 
 ```
 
-*** =solution
+`@solution`
 ```{r}
 # Omista muutujale z nõutud väärtus
 z <- 25*pi
@@ -140,7 +143,7 @@ z + 1/z - 2^(z/19)
 
 ```
 
-*** =sct
+`@sct`
 ```{r}
 # esimene
 msg_undefinedz = "Kontrolli, kas oled defineerinud muutuja `z`."
@@ -214,37 +217,35 @@ test_student_typed(c("z + 1/z - 2^(z/19)", "z + 1/z - 2**(z/19)",
 success_msg("Tubli!")
 ```
 
+---
 
-<!------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
-
-
-
-
-
---- type:NormalExercise lang:r xp:100 skills:1 key:285ccb190b
 ## Tekstiväärtusega muutujad
+
+```yaml
+type: NormalExercise
+key: 285ccb190b
+lang: r
+xp: 100
+skills: 1
+```
 
 Muutujad võivad olla ka tekstilised. Näiteks `x <- "Tere maailm!"` omistab muutujale `x` väärtuseks teksti `Tere maailm!`.
 Tekstiväärtustega arvutustehteid teha ei saa, küll aga saab tekste omavahel ühendada funktsiooni `paste()` abil.
 
-
-
-*** =instructions
+`@instructions`
 - Proovi läbi näited 1 ja 2.
 - Täida ka näite 3 käsud ja vaata, millise veateate annab R. Kas saad aru milles on viga?
 - **Ülesanne:** paranda näite 3 koodis muutuja `poisse`  väärtust nii, et liitmisel tuleks vastuseks arv 5 ning punast veateadet ei ilmuks.
 
+`@hint`
+Veendu, et oled muutnud koodi nii, et muutujale `poisse` omistatakse arvuline väärtus `3`: `poisse <- 3` ning muutujale `tydrukuid` arvuline väärtus 2: `tydrukuid <- 2`.
 
-*** =hint
-Veendu, et oled muutnud koodi nii, et muutujale `poisse` omistatakse arvuline väärtus `3`: `poisse <- 3` ning muutujale `tydrukuid` arvuline väärtus 2: `tydrukuid <- 2`. 
-
-
-*** =pre_exercise_code
+`@pre_exercise_code`
 ```{r}
 
 ```
 
-*** =sample_code
+`@sample_code`
 ```{r}
 # Näide 1: omistame muutujale x väärtuseks  teksti "Tere maailm!" ja väljastame selle
 x <- "Tere maailm!"
@@ -263,7 +264,7 @@ tydrukuid <- 2
 lapsi <- poisse + tydrukuid
 ```
 
-*** =solution
+`@solution`
 ```{r}
 # Näide 1: omistame muutujale x väärtuseks  teksti "Tere maailm!" ja väljastame selle
 x <- "Tere maailm!"
@@ -282,7 +283,7 @@ tydrukuid <- 2
 lapsi <- poisse + tydrukuid
 ```
 
-*** =sct
+`@sct`
 ```{r}
 test_object("poisse", incorrect_msg = "Kontrolli, kas omistad muutujale `poisse` arvu 3.")
 test_object("tydrukuid", incorrect_msg = "Kontrolli, kas omistad muutujale `tydrukuid` arvu 2.")
@@ -292,5 +293,3 @@ test_object("lapsi", undefined_msg = msg, incorrect_msg = msg)
 success_msg("Hästi tehtud! Suundu järgmise harjutuse juurde!")
 
 ```
-
- 
