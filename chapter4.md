@@ -250,12 +250,12 @@ x6
 ```{r}
 test_predefined_objects("x", undefined_msg = "Oled vektori `x` kustutanud! Alusta uuesti.", incorrect_msg = "Muutuja `x` väärtused on muudetud! Alusta uuesti")
 
-test_object("x4", undefined_msg = "Objekti `x4` pole!", incorrect_msg = "Kas tegid võrdluse kujul `x > 30` ?")
+test_object("x4", undefined_msg = "Objekti `x4` pole!", incorrect_msg = "Kas tegid `x4` jaoks võrdluse kujul `x > 30` ?")
 test_output_contains("x4", incorrect_msg = "Vektor `x4` pole välja prinditud!")
 test_student_typed(c("x>30", "30<x"), not_typed_msg = "Kasuta võrdluste tegemisel märke `>` ja `<`.")
 
 
-test_object("x5", undefined_msg = "Objekti `x5` pole!", incorrect_msg = "Kas tegid võrdluse kujul `x < 40` ?")
+test_object("x5", undefined_msg = "Objekti `x5` pole!", incorrect_msg = "Kas tegid `x5` jaoks  võrdluse kujul `x < 40` ?")
 test_output_contains("x4", incorrect_msg = "Vektor `x4` pole välja prinditud!")
 test_student_typed(c("x<40", "40>x"), not_typed_msg = "Kasuta võrdluste tegemisel märke `>` ja `<`.")
 
