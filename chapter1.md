@@ -23,7 +23,7 @@ Lahenduse vihjete saamiseks vajuta nuppu `Take Hint`, aga sellega kaotad võimal
 Oma vastuse esitamiseks vajuta `Submit Answer`-nuppu, siis saadetakse ülesanded kontrollimiseks. Vajuta seda nuppu siis kui oled kirja pannud kõik selle lehekülje ülesannete vastused.
 
 `@instructions`
-**Prooviülesanne (0 punkti):**
+**Prooviülesanne:**
 
 - Liida arvud 3 ja 4.
 - Omista väärtus 7 muutujale `x`.
