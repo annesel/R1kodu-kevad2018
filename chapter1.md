@@ -39,7 +39,7 @@ Oma vastuse esitamiseks vajuta `Submit Answer`-nuppu, siis saadetakse ülesanded
 
 `@sample_code`
 ```{r}
-# Liida
+# Liida arvud
 3 + 4
 
 
@@ -49,7 +49,7 @@ Oma vastuse esitamiseks vajuta `Submit Answer`-nuppu, siis saadetakse ülesanded
 
 `@solution`
 ```{r}
-# Liida
+# Liida arvud
 3 + 4
 
 # Omista
