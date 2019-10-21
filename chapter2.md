@@ -126,16 +126,16 @@ Kui muutuja on väärtustatud, siis edasistes arvutustes võiks muutujat kasutad
 
 `@solution`
 ```{r}
-# Omista muutujale z nõutud väärtus
+# Ülesanne 1: Omista muutujale z nõutud väärtus
 z <- 25*pi
 
-# Leia muutuja z kümnendlogaritm
+# Ülesanne 2: Leia muutuja z kümnendlogaritm
 log10(z)
 
-# Leia muutuja z naturaallogaritm
+# Ülesanne 3: Leia muutuja z naturaallogaritm
 log(z)
 
-# Leia tehte vastus
+# Ülesanne 4: Leia tehte vastus
 z + 1/z - 2^(z/19)
 
 
