@@ -105,13 +105,13 @@ ja paar funktsiooni:
 `@instructions`
 **Leia vastused järgmistele tehetele:**
 
-1. $25 - 1:4  + 5:9$
+1. $\quad 25 - 1:4  + 5:9$
 
-1. $ (\sqrt{3} + 4) : 5 $
+1. $\quad (\sqrt{3} + 4) : 5 $
 
-1. $ (245 - 3^6)^2 $
+1. $\quad (245 - 3^6)^2 $
 
-1. $ \frac{\ln{3} + 4}{55}$
+1. $\quad \frac{\ln{3} + 4}{55}$
 
 `@hint`
 - Pööra tähelepanu tehete järjekorrale.
