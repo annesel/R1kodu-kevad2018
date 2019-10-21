@@ -191,7 +191,7 @@ test_output_contains(expr = "(sqrt(3) + 4) / 5",
 # ÜL 3
 test_output_contains(expr = "(245 - 3^6)^2 ",
                      times = 1,
-                     incorrect_msg = "Midagi on komandas ülesandes valesti! Kontrolli tehete järjekorda. Astendamiseks kasuta märki `^` või `**`.")
+                     incorrect_msg = "Midagi on kolmandas ülesandes valesti! Kontrolli tehete järjekorda. Astendamiseks kasuta märki `^` või `**`.")
  
 # Ül 4
 test_output_contains(expr = "(log(3) + 4) / 55",
