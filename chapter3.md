@@ -119,13 +119,15 @@ skills: 1
 
 Kui anname funktsiooni argumendiks vektori, siis olenevalt funktsioonist võib tulemuseks olla teisendatud väärtustega vektor või mingi kokkuvõtlik summarne näitaja/näitajad.
 
-Töölaual on temperatuurde vektor nimega `temp2`
+Töölaual on temperatuuride vektor nimega `temp2`.
+
+NB! Kui järgmistes ülesannetes pead vastuseks sisestama teksti, siis järgi täpselt nõutud kirjapilti
 
 `@instructions`
-- Vaata millised väärtused  esinevad vektoris `temp2` st prindi väärtused ekraanile
-- **Ülesanne 1.** Rakenda tempratuuride vektorile funktsiooni `exp()`. Kas tulemuses on sama palju elemente kui algses vektoris? Omista oma vastus (tekst "jah" või "ei") muutujale `vastus1`.
-- **Ülesanne 2.** Rakenda tempratuuride vektorile funktsiooni `summary()`. Millisest temperatuurist on pooled temperatuuriväärtused madalamad ja pooled kõrgemad? Omista see väärtus muutujale`vastus2`. 
-- **Ülesanne 3.** Rakenda tempratuuride vektorile funktsiooni `sd()`. Kas standardhälbe väärtus tuleks negatiivne, kui temperatuuride vektoris esineks nii positiivseid kui negatiiivseid väärtuseid? Omista oma vastus (tekst "jah" või "ei") muutujale `vastus3`.
+- Vaata millised väärtused  esinevad vektoris `temp2` st prindi väärtused ekraanile.
+- **Ülesanne 1.** Rakenda temperatuuride vektorile funktsiooni `exp()`. Kas tulemuses on sama palju elemente kui algses vektoris? Omista oma vastus (tekst "jah" või "ei") muutujale `vastus1`.
+- **Ülesanne 2.** Rakenda temperatuuride vektorile funktsiooni `summary()`. Millisest temperatuurist on pooled temperatuuriväärtused madalamad ja pooled kõrgemad? Omista see väärtus muutujale `vastus2`. 
+- **Ülesanne 3.** Rakenda temperatuuride vektorile funktsiooni `sd()`. Kas standardhälbe väärtus tuleks negatiivne, kui temperatuuride vektoris esineks nii positiivseid kui negatiiivseid väärtuseid? Omista oma vastus (tekst "jah" või "ei") muutujale `vastus3`.
 
 `@hint`
 - Teises ülesandes peab muutujale `vastus2` omistama mediaani väärtuse.
@@ -195,7 +197,7 @@ test_function("exp", args = c("x"), index = 1,
               not_called_msg = "Kasuta esimeses ülesandes  funktsiooni `exp()`!",
               args_not_specified_msg = "Kontrolli üle millise argumendi oled funktsioonile `exp()` andnud, see peaks olema temperatuuride vektor.",
               incorrect_msg = "Funktsiooni `exp()` tulemus on vale! Proovi uuesti.")
-test_object("vastus1", undefined_msg = "Muutujat `vastus1` pole!", incorrect_msg = "Muutuja `vastus1` väärtus on vale! Kontrolli, kas kasutad vastuse kirjapanekuks jutumärke.")
+test_object(tolower("vastus1"), undefined_msg = "Muutujat `vastus1` pole!", incorrect_msg = "Muutuja `vastus1` väärtus on vale! Kontrolli, kas kasutad vastuse kirjapanekuks jutumärke.")
 
 
 
@@ -217,9 +219,9 @@ test_function("sd", args = c("x"), index = 1,
               eval = TRUE,
               eq_condition = "equivalent",
               not_called_msg = "Kasuta viimases ülesandes  funktsiooni `sd()`!",
-              args_not_specified_msg = "Kontrolli üle millise argumendi oled funktsioonile `sd()` andnud, see peaks olema temperatuuride vektor.",
+              args_not_specified_msg = "Kontrolli üle, millise argumendi oled funktsioonile `sd()` andnud, see peaks olema temperatuuride vektor.",
               incorrect_msg = "Funktsiooni `sd()` tulemus on vale! Proovi uuesti.")
-test_object("vastus3", undefined_msg = "Muutujat `vastus3` pole!", incorrect_msg = "Muutuja `vastus3` väärtus on vale! Kontrolli, kas kasutad vastuse kirjapanekuks jutumärke.")
+test_object(tolower("vastus3"), undefined_msg = "Muutujat `vastus3` pole!", incorrect_msg = "Muutuja `vastus3` väärtus on vale! Kontrolli, kas kasutad vastuse kirjapanekuks jutumärke.")
 
 
 
