@@ -18,7 +18,8 @@ R-is võivad muutujate nimed sisaldada suuri ja väikesi tähti, numbreid, punkt
 
 Muutujale `x` saab  väärtuse 3 omistada järgmiselt: `x <- 3`. 
 
-**Tähtis!** R teeb vahet suurte ja väikeste tähtede vahel. Seega on `x` ja `X` kaks erinevat objekti. Samuti annab `SQRT(2)` veateate, sest ruutjuure leidmise funktsioon on `sqrt()` (väikesed tähed!).
+**Tähtis!** R teeb vahet suurte ja väikeste tähtede vahel. Seega on `x` ja `X` kaks erinevat objekti. 
+<!--Samuti annab `SQRT(2)` veateate, sest ruutjuure leidmise funktsioon on `sqrt()` (väikesed tähed!).-->
 
 `@instructions`
 - Proovi läbi näited 1 ja 2.
@@ -26,7 +27,7 @@ Muutujale `x` saab  väärtuse 3 omistada järgmiselt: `x <- 3`.
 
 `@hint`
 * Omistamiseks kasuta märki `<-`.
-* Kasuta tehet `w + 5`.
+* Omista muutujale `z` väärtuseks `w + 5`.
 * Väärtuse ekraanile väljastamiseks kirjuta lihtsalt selle muutuja nimi `z`.
 
 `@pre_exercise_code`
@@ -67,8 +68,8 @@ z
 `@sct`
 ```{r}
 test_object(c("w", "z"), undefined_msg = "Kontrolli muutujate nimesid, kas Sul on defineeritud muutujad `w` ja `z`?", incorrect_msg = "Kontrolli mõlema muutuja väärtust!")
-test_student_typed("z <- w + 5", not_typed_msg = "Kas kirjutasid `z <- w + 5`?")
-test_output_contains("z", incorrect_msg = "Kas kirjutasid viimasele reale `z`? ")
+test_student_typed("z <- w + 5", not_typed_msg = "Kas kirjutasid `z` väärtuse omistamise kujul `z <- w + 5`?")
+test_output_contains("z", incorrect_msg = "Kas kirjutasid viimasele reale `z`, et muutuja väärtust näha? ")
 success_msg("Hästi tehtud!")
 ```
 
