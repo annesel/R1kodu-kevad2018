@@ -26,7 +26,7 @@ Oma vastuse esitamiseks vajuta `Submit Answer`-nuppu, siis saadetakse ülesanded
 **Prooviülesanne:**
 
 - Liida arvud 3 ja 4.
-- Omista väärtus 7 muutujale `x`.
+- Omista väärtus 29 muutujale `x`.
 
 `@hint`
 - Liitmiseks kasuta märki `+` või funktsiooni `sum`
@@ -53,7 +53,7 @@ Oma vastuse esitamiseks vajuta `Submit Answer`-nuppu, siis saadetakse ülesanded
 3 + 4
 
 # Omista
-x <- 7
+x <- 29
 ```
 
 `@sct`
