@@ -90,17 +90,17 @@ Kui muutuja on väärtustatud, siis edasistes arvutustes võiks muutujat kasutad
 `@instructions`
 **Lahenda ülesanded:**
 
-1. Omista arv $25 \pi$ muutujale `z`. Arv $\pi$ on R-is muutuja `pi` nime all.
+1.\  Omista arv $25 \pi$ muutujale `z`. Arv $\pi$ on R-is muutuja `pi` nime all.
 
-1. Leia arvu $25 \pi$ kümnendlogaritm, kasutades muutujat `z`.
+1.\  Leia arvu $25 \pi$ kümnendlogaritm, kasutades muutujat `z`.
  
-1. Leia arvu $25 \pi$ naturaallogaritm, kasutades muutujat `z`.
+1.\  Leia arvu $25 \pi$ naturaallogaritm, kasutades muutujat `z`.
 
-1. Kasutades muutujat `z`, arvuta tehte $25 \pi + \frac{1}{25 \pi} - 2^{\frac{25\pi}{19}}$ vastus.
+1.\  Kasutades muutujat `z`, arvuta tehte $25 \pi + \frac{1}{25 \pi} - 2^{\frac{25\pi}{19}}$ vastus.
 
 `@hint`
 - Logaritmfunktsiooni abilehe saad avada kui kirjutad konsoolile `?log` ja vajutad enter-klahvi.
-- Kui sul tekkisid probleemid astendamismärgi `^` leidmisega, siis kasuta selle asemel `**`.
+- Kui sul tekkisid probleemid klaviatuurilt astendamismärgi `^` leidmisega, siis kasuta selle asemel `**`.
 
 `@pre_exercise_code`
 ```{r}
@@ -161,7 +161,7 @@ test_function_result(name = "log10",
                      not_called_msg = "Teises ülesandes pead kasutama funktsiooni `log10`",
                      error_msg = "Teises ülesandes on midagi valesti!",
                      incorrect_msg = "Oled funktsioonile `log10` andnud vale väärtusega argumendi")
-test_student_typed("log10(z)", not_typed_msg = "Kas kasutasid teises ülesandes funtksiooni argumendina muutujat `z`?")
+test_student_typed("log10(z)", not_typed_msg = "Kas kasutasid teises ülesandes funktsiooni  `log10` argumendina muutujat `z`?")
 
  
 test_output_contains(expr = "log10(z)",
