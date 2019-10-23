@@ -121,7 +121,6 @@ Kui anname funktsiooni argumendiks vektori, siis olenevalt funktsioonist võib t
 
 Töölaual on temperatuuride vektor nimega `temp2`.
 
-NB! Kui järgmistes ülesannetes pead vastuseks sisestama teksti, siis järgi täpselt nõutud kirjapilti
 
 `@instructions`
 - Vaata millised väärtused  esinevad vektoris `temp2` st prindi väärtused ekraanile.
@@ -197,7 +196,7 @@ test_function("exp", args = c("x"), index = 1,
               not_called_msg = "Kasuta esimeses ülesandes  funktsiooni `exp()`!",
               args_not_specified_msg = "Kontrolli üle millise argumendi oled funktsioonile `exp()` andnud, see peaks olema temperatuuride vektor.",
               incorrect_msg = "Funktsiooni `exp()` tulemus on vale! Proovi uuesti.")
-test_object(tolower("vastus1"), undefined_msg = "Muutujat `vastus1` pole!", incorrect_msg = "Muutuja `vastus1` väärtus on vale! Kontrolli, kas kasutad vastuse kirjapanekuks jutumärke.")
+test_object("vastus1", undefined_msg = "Muutujat `vastus1` pole!", incorrect_msg = "Muutuja `vastus1` väärtus on vale! Kontrolli, kas kasutad vastuse kirjapanekuks väikseid tähti ja jutumärke.")
 
 
 
@@ -221,7 +220,7 @@ test_function("sd", args = c("x"), index = 1,
               not_called_msg = "Kasuta viimases ülesandes  funktsiooni `sd()`!",
               args_not_specified_msg = "Kontrolli üle, millise argumendi oled funktsioonile `sd()` andnud, see peaks olema temperatuuride vektor.",
               incorrect_msg = "Funktsiooni `sd()` tulemus on vale! Proovi uuesti.")
-test_object(tolower("vastus3"), undefined_msg = "Muutujat `vastus3` pole!", incorrect_msg = "Muutuja `vastus3` väärtus on vale! Kontrolli, kas kasutad vastuse kirjapanekuks jutumärke.")
+test_object("vastus3", undefined_msg = "Muutujat `vastus3` pole!", incorrect_msg = "Muutuja `vastus3` väärtus on vale! Kontrolli, kas kasutad vastuse kirjapanekuks väikseid tähti ja jutumärke.")
 
 
 
