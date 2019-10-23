@@ -22,7 +22,7 @@ skills: 1
 
 `@instructions`
 - Tee läbi näited 1 kuni 3.
-- **Ülesanne 1.** Teisenda temperatuurid celsiuse skaalalt fahrenheiti skaalale ($^\circ\hspace{-0.1em} F = ^\circ\hspace{-0.1em} C \times \frac{9}{5} + 32$). Omista tulemus muutujale `Fahrenheit` ja prindi see ekraanile.
+- **Ülesanne 1.** Teisenda temperatuurid Celsiuse skaalalt Fahrenheiti skaalale ($^\circ\hspace{-0.1em} F = ^\circ\hspace{-0.1em} C \times \frac{9}{5} + 32$). Omista tulemus muutujale `Fahrenheit` ja prindi see ekraanile.
 - **Ülesanne 2.** Vektoris `lisa` on veel kaks õhutemperatuuri($^\circ\hspace{-0.1em} C$). Prindi see vektor ekraanile.
 - **Ülesanne 3.** Kasutades funkstiooni `c()` moodusta vektor nimega `temp2`, mille esimesed 9 elementi  on temperatuurid vektorist `temp` ja järgmised 2 temperatuurid vektorist `lisa`. Väljasta tulemus ekraanile.
 
@@ -50,7 +50,7 @@ temp; jaam
 names(temp) <- jaam
 temp
 
-# Ülesanne 1: Teisenda temperatuurid celsiuse skaalalt fahrenheiti skaalale (asenda alakriips vajaliku tehtega) ja prindi tulemus ekraanile
+# Ülesanne 1: Teisenda temperatuurid Celsiuse skaalalt Fahrenheiti skaalale (asenda alakriips vajaliku tehtega) ja prindi tulemus ekraanile
 Fahrenheit <- ___________________ 
 Fahrenheit 
 
@@ -76,7 +76,7 @@ temp; jaam
 names(temp) <- jaam
 temp
 
-# Ülesanne 1: Teisenda temperatuurid celsiuse skaalalt fahrenheiti skaalale (asenda alakriipsud vajaliku tehteda) ja prindi tulemus ekraanile
+# Ülesanne 1: Teisenda temperatuurid Celsiuse skaalalt Fahrenheiti skaalale (asenda alakriipsud vajaliku tehteda) ja prindi tulemus ekraanile
 Fahrenheit <- temp * 9/5 + 32
 Fahrenheit 
 
