@@ -102,7 +102,7 @@ test_function("is.logical",  args = "x", index = 1,
               eq_condition = "equivalent",
               not_called_msg = "Esimeses ülesandes kasuta funktsiooni `is.logical()`",
               args_not_specified_msg = NULL,
-              incorrect_msg = "Esimeses ülesandes on funktsioonile `is-logical()` ette antud vale argumendiväärtus. Alusta uuesti.")
+              incorrect_msg = "Esimeses ülesandes on funktsioonile `is.logical()` ette antud vale argumendiväärtus. Alusta uuesti.")
 
 
 
@@ -122,7 +122,7 @@ test_function("is.na",  args = "x", index = 1,
               not_called_msg = "Viimases ülesandes kasuta funktsiooni `is.na()`",
               args_not_specified_msg = NULL,
               incorrect_msg = "Viimases ülesandes on funtsioonile ette antud vale argumendiväärtus. Alusta uuesti.")
-test_object("muutuja3", undefined_msg = "Objekti `muutuja3` pole!", incorrect_msg = "Kas tegid omistamise kujul `is.na(muutuja3)[1] <- TRUE`?")
+test_object("muutuja3", undefined_msg = "Objekti `muutuja3` pole!", incorrect_msg = "Kas tegid viimases ülesandes omistamise kujul `is.na(muutuja3)[1] <- TRUE`?")
 
 test_output_contains("muutuja3", incorrect_msg = "Vektor `muutuja3` pole välja prinditud!")
 
