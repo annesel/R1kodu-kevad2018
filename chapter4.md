@@ -333,7 +333,7 @@ table(y)
 
 
 # Ülesanne: Leia tõevektor, mis näitaks millised vektori y väärtused vastavad sõnele "tere" või "tsau".  Omista vektor muutujale viimane, prindi see ekraanile.
-
+viimane <- _________ __ _________
  
 ```
 
@@ -361,7 +361,7 @@ viimane
 ```{r}
 test_predefined_objects("y",undefined_msg = "Oled vektori `y` kustutanud! Alusta uuesti.", incorrect_msg = "Muutuja `y` väärtused on muudetud! Alusta uuesti")
 
-test_object("viimane", undefined_msg = "Objekti `viimane` pole!", incorrect_msg = "Muutuja `viimane` väärus on vale. Proovi uuesti. Kontrolli  ka tekstiväärtuste kirjapanek üle, ega 'hei' asemel pole näiteks 'hie'?")
+test_object("viimane", undefined_msg = "Objekti `viimane` pole!", incorrect_msg = "Muutuja `viimane` väärus on vale. Proovi uuesti. Kontrolli ka tekstiväärtuste kirjapanek üle, ega 'hei' asemel pole näiteks 'hie'?")
 test_output_contains("viimane", incorrect_msg = "Vektor `viimane` pole välja prinditud!")
 #test_student_typed(c("y == "tere" | y == "tsau"", "!(y == "hommikust" | y == "hei")", "y != "hommikust" & y != "hei"") )
 
