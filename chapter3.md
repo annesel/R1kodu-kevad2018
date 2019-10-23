@@ -251,7 +251,7 @@ Väga sageli on tarvis vektorist kätte saada meile hetkel vajalikku alamosa. Va
 
 `@hint`
 - Funktsioonis `seq()` peab määrama argumendid `from`, `to` ja `by`.
-- Märgi $\leq$ moodustamiseks kombineeri `<` ja `=` märke:  `<=`.
+- Märgi $\leq$ moodustamiseks kombineeri `<` ja `=` märke nii:  `<=`.
 
 `@pre_exercise_code`
 ```{r}
@@ -271,7 +271,7 @@ temp[ c(1, 5, 9) ] # vektori esimene, viies ja üheksas element
 
 # Näide 2. Tulemuseks tõeväärtustega vektorid 
 temp < -15 # Kontrollime millised temperatuurid jäävad alla -15 kraadi 
-jaam == "Tallinn"  # Millisel kohal vektoris on ilmajaama nimi Tallinn?
+jaam == "Tallinn"  # Kas mõne jaama nimi on "Tallinn"?
 
 # Näide 3. Tingimustele vastavate elementide väljavalimine. Tõeväärtusvektori kasutamine
 jaam[ temp < -15 ] # valime välja need  jaamad, kus temperatuur on alla -15
@@ -300,7 +300,7 @@ temp[ c(1, 5, 9) ] # vektori esimene, viies ja üheksas element
 
 # Näide 2. Tulemuseks tõeväärtustega vektorid 
 temp < -15 # Kontrollime millised temperatuurid jäävad alla -15 kraadi. 
-jaam == "Tallinn"  # Mitmes jaam on Tallinn?
+jaam == "Tallinn"  # Kas mõne jaama nimi on "Tallinn"
 
 # Näide 3. Tingimustele vastavate elementide väljavalimine. Tõeväärtusvektori kasutamine
 jaam[ temp < -15 ] # valime välja need  jaamad, kus temperatuur on alla -15
@@ -332,7 +332,7 @@ test_output_contains("vastus1", incorrect_msg = "Vektor `vastus1` pole välja pr
 
 
 
-test_object("vastus2", undefined_msg = "Muutujat `vastus2` pole!", incorrect_msg = "Kas moodustasid tõevektori kujul `temp <= -17`?")
+test_object("vastus2", undefined_msg = "Muutujat `vastus2` pole!", incorrect_msg = "Kas moodustasid tõeväärtuste vektori kujul `temp <= -17`?")
 test_output_contains("vastus2", incorrect_msg = "Vektor `vastus2` pole välja prinditud!")
 
 
