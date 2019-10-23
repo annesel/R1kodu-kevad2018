@@ -121,7 +121,6 @@ Kui anname funktsiooni argumendiks vektori, siis olenevalt funktsioonist võib t
 
 Töölaual on temperatuuride vektor nimega `temp2`.
 
-
 `@instructions`
 - Vaata millised väärtused  esinevad vektoris `temp2` st prindi väärtused ekraanile.
 - **Ülesanne 1.** Rakenda temperatuuride vektorile funktsiooni `exp()`. Kas tulemuses on sama palju elemente kui algses vektoris? Omista oma vastus (tekst "jah" või "ei") muutujale `vastus1`.
