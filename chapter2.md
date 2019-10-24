@@ -90,13 +90,13 @@ Kui muutuja on väärtustatud, siis edasistes arvutustes võiks muutujat kasutad
 `@instructions`
 **Lahenda ülesanded:**
 
-1.\  Omista arv $25 \pi$ muutujale `z`. Arv $\pi$ on R-is muutuja `pi` nime all.
+1.  Omista arv $25 \pi$ muutujale `z`. Arv $\pi$ on R-is muutuja `pi` nime all.
 
-1.\  Leia arvu $25 \pi$ kümnendlogaritm, kasutades muutujat `z`.
+1.  Leia arvu $25 \pi$ kümnendlogaritm, kasutades muutujat `z`.
  
-1.\  Leia arvu $25 \pi$ naturaallogaritm, kasutades muutujat `z`.
+1.  Leia arvu $25 \pi$ naturaallogaritm, kasutades muutujat `z`.
 
-1.\  Kasutades muutujat `z`, arvuta tehte $25 \pi + \frac{1}{25 \pi} - 2^{\frac{25\pi}{19}}$ vastus.
+1.  Kasutades muutujat `z`, arvuta tehte $25 \pi + \frac{1}{25 \pi} - 2^{\frac{25\pi}{19}}$ vastus.
 
 `@hint`
 - Logaritmfunktsiooni abilehe saad avada kui kirjutad konsoolile `?log` ja vajutad enter-klahvi.
